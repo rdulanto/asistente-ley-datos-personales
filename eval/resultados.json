@@ -1,0 +1,802 @@
+{
+  "1. BM25 palabras exactas": {
+    "desarrollo": {
+      "acierto@1": 0.4666666666666667,
+      "acierto@3": 0.7,
+      "acierto@5": 0.8333333333333334,
+      "MRR": 0.5983333333333333,
+      "n": 30,
+      "fallos": [
+        {
+          "pregunta": "¿Qué conductas se consideran infracciones leves?",
+          "esperado": [
+            "reglamento-132",
+            "ley-38"
+          ],
+          "top3": [
+            "reglamento-117",
+            "reglamento-131",
+            "reglamento-115"
+          ]
+        },
+        {
+          "pregunta": "¿Cuántos días tengo para responder una solicitud de acceso de un cliente a sus datos?",
+          "esperado": [
+            "reglamento-69"
+          ],
+          "top3": [
+            "reglamento-68",
+            "reglamento-19",
+            "reglamento-66"
+          ]
+        },
+        {
+          "pregunta": "¿Puedo llamar a un prospecto para ofrecerle un crédito si no me dio su consentimiento?",
+          "esperado": [
+            "reglamento-26"
+          ],
+          "top3": [
+            "reglamento-3",
+            "reglamento-10",
+            "ley-14"
+          ]
+        },
+        {
+          "pregunta": "¿Qué información debo darle a una persona antes de recopilar sus datos?",
+          "esperado": [
+            "ley-18",
+            "reglamento-6",
+            "reglamento-74"
+          ],
+          "top3": [
+            "ley-2",
+            "reglamento-38",
+            "reglamento-23"
+          ]
+        },
+        {
+          "pregunta": "¿Qué es un dato sensible según la ley?",
+          "esperado": [
+            "ley-2"
+          ],
+          "top3": [
+            "reglamento-134",
+            "reglamento-118",
+            "reglamento-76"
+          ]
+        },
+        {
+          "pregunta": "¿Puede mi proveedor subcontratar a otra empresa para tratar los datos?",
+          "esperado": [
+            "reglamento-32"
+          ],
+          "top3": [
+            "ley-11",
+            "reglamento-59",
+            "reglamento-38"
+          ]
+        },
+        {
+          "pregunta": "¿Un cliente puede pedir que borren sus datos?",
+          "esperado": [
+            "ley-20",
+            "reglamento-82"
+          ],
+          "top3": [
+            "reglamento-81",
+            "ley-18",
+            "reglamento-67"
+          ]
+        },
+        {
+          "pregunta": "¿Qué hago si una empresa no responde mi solicitud sobre mis datos?",
+          "esperado": [
+            "ley-24",
+            "reglamento-88",
+            "reglamento-89"
+          ],
+          "top3": [
+            "ley-19",
+            "reglamento-38",
+            "reglamento-66"
+          ]
+        },
+        {
+          "pregunta": "¿Quién es la autoridad que supervisa la protección de datos en el Perú?",
+          "esperado": [
+            "ley-32",
+            "ley-33"
+          ],
+          "top3": [
+            "reglamento-19",
+            "ley-1",
+            "ley-15"
+          ]
+        }
+      ]
+    },
+    "prueba": {
+      "acierto@1": 0.26666666666666666,
+      "acierto@3": 0.3333333333333333,
+      "acierto@5": 0.4666666666666667,
+      "MRR": 0.33952380952380956,
+      "n": 15,
+      "fallos": [
+        {
+          "pregunta": "Se filtraron los DNI de nuestros usuarios, ¿qué tenemos que hacer con la autoridad?",
+          "esperado": [
+            "reglamento-34",
+            "reglamento-35"
+          ],
+          "top3": [
+            "reglamento-75",
+            "reglamento-105",
+            "reglamento-55"
+          ]
+        },
+        {
+          "pregunta": "¿Puedo usar los datos de mis clientes para venderles otros productos por WhatsApp?",
+          "esperado": [
+            "reglamento-26"
+          ],
+          "top3": [
+            "reglamento-65",
+            "reglamento-77",
+            "reglamento-37"
+          ]
+        },
+        {
+          "pregunta": "Quiero eliminar mis datos de la base de una tienda, ¿tengo ese derecho?",
+          "esperado": [
+            "ley-20",
+            "reglamento-82"
+          ],
+          "top3": [
+            "reglamento-30",
+            "reglamento-64",
+            "reglamento-66"
+          ]
+        },
+        {
+          "pregunta": "¿Cuánto puede costar como máximo una sanción leve?",
+          "esperado": [
+            "ley-39"
+          ],
+          "top3": [
+            "reglamento-117",
+            "reglamento-113",
+            "reglamento-115"
+          ]
+        },
+        {
+          "pregunta": "¿Podemos guardar los datos de clientes en servidores de Estados Unidos?",
+          "esperado": [
+            "ley-15",
+            "reglamento-18",
+            "reglamento-19"
+          ],
+          "top3": [
+            "ley-17",
+            "ley-14",
+            "reglamento-120"
+          ]
+        },
+        {
+          "pregunta": "¿El banco puede negarme un crédito usando solo un modelo automático?",
+          "esperado": [
+            "ley-23",
+            "reglamento-87"
+          ],
+          "top3": [
+            "reglamento-20",
+            "reglamento-28",
+            "reglamento-82"
+          ]
+        },
+        {
+          "pregunta": "¿Cuánto tiempo tiene una empresa para corregir mis datos si están mal?",
+          "esperado": [
+            "reglamento-69"
+          ],
+          "top3": [
+            "ley-18",
+            "reglamento-37",
+            "reglamento-56"
+          ]
+        },
+        {
+          "pregunta": "¿Cómo presento una queja ante la autoridad si una empresa usa mal mis datos?",
+          "esperado": [
+            "ley-24",
+            "reglamento-88",
+            "reglamento-89"
+          ],
+          "top3": [
+            "reglamento-19",
+            "reglamento-38",
+            "reglamento-51"
+          ]
+        },
+        {
+          "pregunta": "¿Es obligatorio anonimizar los datos antes de usarlos para análisis?",
+          "esperado": [
+            "reglamento-41",
+            "ley-2"
+          ],
+          "top3": [
+            "reglamento-19",
+            "reglamento-47",
+            "reglamento-74"
+          ]
+        },
+        {
+          "pregunta": "¿Puedo pagar una multa en cuotas o con descuento?",
+          "esperado": [
+            "reglamento-127"
+          ],
+          "top3": [
+            "ley-39",
+            "reglamento-130",
+            "reglamento-123"
+          ]
+        }
+      ]
+    }
+  },
+  "2. BM25 + raíces en español": {
+    "desarrollo": {
+      "acierto@1": 0.3333333333333333,
+      "acierto@3": 0.7333333333333333,
+      "acierto@5": 0.8,
+      "MRR": 0.5275925925925926,
+      "n": 30,
+      "fallos": [
+        {
+          "pregunta": "¿Cuál es la multa máxima por una infracción muy grave?",
+          "esperado": [
+            "ley-39"
+          ],
+          "top3": [
+            "reglamento-117",
+            "reglamento-131",
+            "reglamento-130"
+          ]
+        },
+        {
+          "pregunta": "¿Un cliente puede pedir que le entregue sus datos en un formato para llevarlos a otro banco?",
+          "esperado": [
+            "reglamento-76"
+          ],
+          "top3": [
+            "reglamento-105",
+            "reglamento-89",
+            "reglamento-58"
+          ]
+        },
+        {
+          "pregunta": "¿Puedo llamar a un prospecto para ofrecerle un crédito si no me dio su consentimiento?",
+          "esperado": [
+            "reglamento-26"
+          ],
+          "top3": [
+            "ley-14",
+            "reglamento-66",
+            "reglamento-3"
+          ]
+        },
+        {
+          "pregunta": "¿Qué información debo darle a una persona antes de recopilar sus datos?",
+          "esperado": [
+            "ley-18",
+            "reglamento-6",
+            "reglamento-74"
+          ],
+          "top3": [
+            "ley-2",
+            "reglamento-23",
+            "ley-19"
+          ]
+        },
+        {
+          "pregunta": "¿Qué es un dato sensible según la ley?",
+          "esperado": [
+            "ley-2"
+          ],
+          "top3": [
+            "reglamento-8",
+            "reglamento-134",
+            "reglamento-133"
+          ]
+        },
+        {
+          "pregunta": "¿Un cliente puede pedir que borren sus datos?",
+          "esperado": [
+            "ley-20",
+            "reglamento-82"
+          ],
+          "top3": [
+            "reglamento-89",
+            "ley-14",
+            "reglamento-76"
+          ]
+        },
+        {
+          "pregunta": "¿Qué hago si una empresa no responde mi solicitud sobre mis datos?",
+          "esperado": [
+            "ley-24",
+            "reglamento-88",
+            "reglamento-89"
+          ],
+          "top3": [
+            "reglamento-68",
+            "reglamento-38",
+            "reglamento-66"
+          ]
+        },
+        {
+          "pregunta": "¿Qué factores reducen mi responsabilidad en un procedimiento sancionador?",
+          "esperado": [
+            "reglamento-125"
+          ],
+          "top3": [
+            "reglamento-135",
+            "reglamento-41",
+            "reglamento-50"
+          ]
+        }
+      ]
+    },
+    "prueba": {
+      "acierto@1": 0.3333333333333333,
+      "acierto@3": 0.5333333333333333,
+      "acierto@5": 0.6666666666666666,
+      "MRR": 0.45722222222222225,
+      "n": 15,
+      "fallos": [
+        {
+          "pregunta": "Se filtraron los DNI de nuestros usuarios, ¿qué tenemos que hacer con la autoridad?",
+          "esperado": [
+            "reglamento-34",
+            "reglamento-35"
+          ],
+          "top3": [
+            "reglamento-39",
+            "reglamento-46",
+            "reglamento-55"
+          ]
+        },
+        {
+          "pregunta": "Quiero eliminar mis datos de la base de una tienda, ¿tengo ese derecho?",
+          "esperado": [
+            "ley-20",
+            "reglamento-82"
+          ],
+          "top3": [
+            "ley-31",
+            "reglamento-81",
+            "reglamento-122"
+          ]
+        },
+        {
+          "pregunta": "¿Podemos guardar los datos de clientes en servidores de Estados Unidos?",
+          "esperado": [
+            "ley-15",
+            "reglamento-18",
+            "reglamento-19"
+          ],
+          "top3": [
+            "ley-17",
+            "ley-35",
+            "ley-14"
+          ]
+        },
+        {
+          "pregunta": "¿El banco puede negarme un crédito usando solo un modelo automático?",
+          "esperado": [
+            "ley-23",
+            "reglamento-87"
+          ],
+          "top3": [
+            "reglamento-20",
+            "reglamento-45",
+            "reglamento-126"
+          ]
+        },
+        {
+          "pregunta": "¿Cuánto tiempo tiene una empresa para corregir mis datos si están mal?",
+          "esperado": [
+            "reglamento-69"
+          ],
+          "top3": [
+            "reglamento-56",
+            "reglamento-122",
+            "reglamento-3"
+          ]
+        },
+        {
+          "pregunta": "¿Cómo presento una queja ante la autoridad si una empresa usa mal mis datos?",
+          "esperado": [
+            "ley-24",
+            "reglamento-88",
+            "reglamento-89"
+          ],
+          "top3": [
+            "reglamento-56",
+            "reglamento-37",
+            "reglamento-38"
+          ]
+        },
+        {
+          "pregunta": "¿Es obligatorio anonimizar los datos antes de usarlos para análisis?",
+          "esperado": [
+            "reglamento-41",
+            "ley-2"
+          ],
+          "top3": [
+            "reglamento-40",
+            "reglamento-19",
+            "ley-6"
+          ]
+        }
+      ]
+    }
+  },
+  "3. BM25 + raíces + glosario de negocio": {
+    "desarrollo": {
+      "acierto@1": 0.6,
+      "acierto@3": 0.9,
+      "acierto@5": 0.9666666666666667,
+      "MRR": 0.7483333333333333,
+      "n": 30,
+      "fallos": [
+        {
+          "pregunta": "¿Qué información debo darle a una persona antes de recopilar sus datos?",
+          "esperado": [
+            "ley-18",
+            "reglamento-6",
+            "reglamento-74"
+          ],
+          "top3": [
+            "ley-2",
+            "ley-19",
+            "reglamento-75"
+          ]
+        },
+        {
+          "pregunta": "¿Qué es un dato sensible según la ley?",
+          "esperado": [
+            "ley-2"
+          ],
+          "top3": [
+            "reglamento-8",
+            "reglamento-134",
+            "reglamento-133"
+          ]
+        },
+        {
+          "pregunta": "¿Se puede reducir la multa si pago rápido?",
+          "esperado": [
+            "reglamento-127"
+          ],
+          "top3": [
+            "ley-39",
+            "reglamento-130",
+            "reglamento-126"
+          ]
+        }
+      ]
+    },
+    "prueba": {
+      "acierto@1": 0.4666666666666667,
+      "acierto@3": 0.6,
+      "acierto@5": 0.7333333333333333,
+      "MRR": 0.5588888888888889,
+      "n": 15,
+      "fallos": [
+        {
+          "pregunta": "Se filtraron los DNI de nuestros usuarios, ¿qué tenemos que hacer con la autoridad?",
+          "esperado": [
+            "reglamento-34",
+            "reglamento-35"
+          ],
+          "top3": [
+            "reglamento-39",
+            "ley-32",
+            "ley-35"
+          ]
+        },
+        {
+          "pregunta": "¿Podemos guardar los datos de clientes en servidores de Estados Unidos?",
+          "esperado": [
+            "ley-15",
+            "reglamento-18",
+            "reglamento-19"
+          ],
+          "top3": [
+            "ley-17",
+            "ley-14",
+            "reglamento-73"
+          ]
+        },
+        {
+          "pregunta": "¿Cuánto tiempo tiene una empresa para corregir mis datos si están mal?",
+          "esperado": [
+            "reglamento-69"
+          ],
+          "top3": [
+            "reglamento-56",
+            "reglamento-122",
+            "reglamento-3"
+          ]
+        },
+        {
+          "pregunta": "¿Cómo presento una queja ante la autoridad si una empresa usa mal mis datos?",
+          "esperado": [
+            "ley-24",
+            "reglamento-88",
+            "reglamento-89"
+          ],
+          "top3": [
+            "ley-32",
+            "ley-35",
+            "ley-34"
+          ]
+        },
+        {
+          "pregunta": "¿Es obligatorio anonimizar los datos antes de usarlos para análisis?",
+          "esperado": [
+            "reglamento-41",
+            "ley-2"
+          ],
+          "top3": [
+            "reglamento-40",
+            "reglamento-19",
+            "ley-6"
+          ]
+        },
+        {
+          "pregunta": "¿Puedo pagar una multa en cuotas o con descuento?",
+          "esperado": [
+            "reglamento-127"
+          ],
+          "top3": [
+            "ley-39",
+            "reglamento-130",
+            "reglamento-126"
+          ]
+        }
+      ]
+    }
+  },
+  "4. Embeddings multilingual-e5-large": {
+    "desarrollo": {
+      "acierto@1": 0.6666666666666666,
+      "acierto@3": 0.8666666666666667,
+      "acierto@5": 0.9666666666666667,
+      "MRR": 0.775,
+      "n": 30,
+      "fallos": [
+        {
+          "pregunta": "¿Qué conductas se consideran infracciones graves?",
+          "esperado": [
+            "reglamento-133",
+            "ley-38"
+          ],
+          "top3": [
+            "reglamento-134",
+            "reglamento-131",
+            "reglamento-117"
+          ]
+        },
+        {
+          "pregunta": "¿En qué casos no necesito el consentimiento del titular para tratar sus datos?",
+          "esperado": [
+            "ley-14"
+          ],
+          "top3": [
+            "reglamento-13",
+            "reglamento-4",
+            "reglamento-1"
+          ]
+        },
+        {
+          "pregunta": "¿Qué es un dato sensible según la ley?",
+          "esperado": [
+            "ley-2"
+          ],
+          "top3": [
+            "ley-3",
+            "ley-13",
+            "ley-18"
+          ]
+        },
+        {
+          "pregunta": "¿Qué hago si una empresa no responde mi solicitud sobre mis datos?",
+          "esperado": [
+            "ley-24",
+            "reglamento-88",
+            "reglamento-89"
+          ],
+          "top3": [
+            "reglamento-70",
+            "reglamento-73",
+            "reglamento-69"
+          ]
+        }
+      ]
+    },
+    "prueba": {
+      "acierto@1": 0.4,
+      "acierto@3": 0.7333333333333333,
+      "acierto@5": 0.8666666666666667,
+      "MRR": 0.5777777777777777,
+      "n": 15,
+      "fallos": [
+        {
+          "pregunta": "Se filtraron los DNI de nuestros usuarios, ¿qué tenemos que hacer con la autoridad?",
+          "esperado": [
+            "reglamento-34",
+            "reglamento-35"
+          ],
+          "top3": [
+            "ley-24",
+            "reglamento-102",
+            "reglamento-94"
+          ]
+        },
+        {
+          "pregunta": "¿Podemos guardar los datos de clientes en servidores de Estados Unidos?",
+          "esperado": [
+            "ley-15",
+            "reglamento-18",
+            "reglamento-19"
+          ],
+          "top3": [
+            "reglamento-31",
+            "ley-30",
+            "reglamento-27"
+          ]
+        },
+        {
+          "pregunta": "¿El banco puede negarme un crédito usando solo un modelo automático?",
+          "esperado": [
+            "ley-23",
+            "reglamento-87"
+          ],
+          "top3": [
+            "reglamento-45",
+            "reglamento-73",
+            "reglamento-126"
+          ]
+        },
+        {
+          "pregunta": "¿Es obligatorio anonimizar los datos antes de usarlos para análisis?",
+          "esperado": [
+            "reglamento-41",
+            "ley-2"
+          ],
+          "top3": [
+            "ley-6",
+            "ley-14",
+            "ley-28"
+          ]
+        }
+      ]
+    }
+  },
+  "5. Híbrido (3 + 4, fusión de rankings)": {
+    "desarrollo": {
+      "acierto@1": 0.6666666666666666,
+      "acierto@3": 0.9,
+      "acierto@5": 0.9666666666666667,
+      "MRR": 0.8,
+      "n": 30,
+      "fallos": [
+        {
+          "pregunta": "¿Qué conductas se consideran infracciones graves?",
+          "esperado": [
+            "reglamento-133",
+            "ley-38"
+          ],
+          "top3": [
+            "reglamento-117",
+            "reglamento-131",
+            "reglamento-134"
+          ]
+        },
+        {
+          "pregunta": "¿Qué información debo darle a una persona antes de recopilar sus datos?",
+          "esperado": [
+            "ley-18",
+            "reglamento-6",
+            "reglamento-74"
+          ],
+          "top3": [
+            "reglamento-4",
+            "reglamento-75",
+            "reglamento-23"
+          ]
+        },
+        {
+          "pregunta": "¿Qué es un dato sensible según la ley?",
+          "esperado": [
+            "ley-2"
+          ],
+          "top3": [
+            "reglamento-8",
+            "ley-3",
+            "ley-13"
+          ]
+        }
+      ]
+    },
+    "prueba": {
+      "acierto@1": 0.6,
+      "acierto@3": 0.6666666666666666,
+      "acierto@5": 0.8,
+      "MRR": 0.6707407407407406,
+      "n": 15,
+      "fallos": [
+        {
+          "pregunta": "Se filtraron los DNI de nuestros usuarios, ¿qué tenemos que hacer con la autoridad?",
+          "esperado": [
+            "reglamento-34",
+            "reglamento-35"
+          ],
+          "top3": [
+            "ley-24",
+            "ley-35",
+            "ley-32"
+          ]
+        },
+        {
+          "pregunta": "¿Podemos guardar los datos de clientes en servidores de Estados Unidos?",
+          "esperado": [
+            "ley-15",
+            "reglamento-18",
+            "reglamento-19"
+          ],
+          "top3": [
+            "ley-35",
+            "reglamento-57",
+            "ley-17"
+          ]
+        },
+        {
+          "pregunta": "¿Cuánto tiempo tiene una empresa para corregir mis datos si están mal?",
+          "esperado": [
+            "reglamento-69"
+          ],
+          "top3": [
+            "reglamento-122",
+            "ley-8",
+            "reglamento-34"
+          ]
+        },
+        {
+          "pregunta": "¿Es obligatorio anonimizar los datos antes de usarlos para análisis?",
+          "esperado": [
+            "reglamento-41",
+            "ley-2"
+          ],
+          "top3": [
+            "ley-6",
+            "ley-28",
+            "reglamento-40"
+          ]
+        },
+        {
+          "pregunta": "¿Puedo pagar una multa en cuotas o con descuento?",
+          "esperado": [
+            "reglamento-127"
+          ],
+          "top3": [
+            "reglamento-126",
+            "ley-39",
+            "reglamento-130"
+          ]
+        }
+      ]
+    }
+  }
+}
